@@ -1,0 +1,8 @@
+{
+    "default": true,
+    "MD033": {
+      "allowed_elements": [ "h1", "h3", "HR", "p", "div", "img", "lib", "CONFIG", "br", "details", "summary", "verbosity",
+      "other", "env", "name" ]
+    },
+    "MD013": false
+}

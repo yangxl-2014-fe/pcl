@@ -1,0 +1,13 @@
+{
+    "editor.fontSize": 14,
+    "editor.rulers": [80,120],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#3f6277"
+    },
+    "files.associations": {
+        "orderingmethods": "cpp",
+        "random": "cpp",
+        "*.tcc": "cpp",
+        "functional": "cpp"
+    }
+}
