@@ -13,7 +13,8 @@
 - [Contents](#contents)
 - [Algorithms](#algorithms)
   - [bilateral filter](#bilateral-filter)
-    - [bilateral filter implementation](#bilateral-filter-implementation)
+    - [bilateral filter implementation in pcl](#bilateral-filter-implementation-in-pcl)
+    - [bilateral filter implementation in opencv](#bilateral-filter-implementation-in-opencv)
 
 <!--
 
@@ -74,7 +75,7 @@ A bilteral filter is used for smoothing images and reducing noise, while preserv
 
 -->
 
-### bilateral filter implementation
+### bilateral filter implementation in pcl
 
 ```bash
 tree -f -a | grep -i bilateral
@@ -145,6 +146,26 @@ tree -f -a | grep -i bilateral
   float default_sigma_s = 5.0f;
   float default_sigma_r = 0.03f;
   ```
+
+### bilateral filter implementation in opencv
+
+```bash
+# /home/ftx/Documents/yangxl-2014-fe/[fork]-Robot/opencv/manual-opencv.md
+
+opencv$ tree -f -a | grep -i bilateral
+│   │   │   ├── ./doc/js_tutorials/js_assets/js_filtering_bilateralFilter.html
+│   │   │   │   │   ├── ./doc/py_tutorials/py_imgproc/py_filtering/images/bilateral.jpg
+│   │   │   ├── ./doc/tutorials/imgproc/gausian_median_blur_bilateral_filter
+│   │   │   │   ├── ./doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/gausian_median_blur_bilateral_filter.markdown
+│   │   │   │   └── ./doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/images
+│   │   │   │       ├── ./doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/images/Smoothing_Tutorial_Result_Median_Filter.jpg
+│   │   │   │       └── ./doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/images/Smoothing_Tutorial_theory_gaussian_0.jpg
+│   │   │   ├── ./modules/imgproc/perf/perf_bilateral.cpp
+│   │   │   ├── ./modules/imgproc/src/bilateral_filter.dispatch.cpp
+│   │   │   ├── ./modules/imgproc/src/bilateral_filter.simd.hpp
+│   │   │   │   ├── ./modules/imgproc/src/opencl/bilateral.cl
+│   │       ├── ./modules/imgproc/test/test_bilateral_filter.cpp
+```
 
 <!--
 
